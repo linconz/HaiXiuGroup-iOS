@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MainViewController : UIViewController
-
+{
+    IBOutlet UIButton   *_testButton;
+}
+- (IBAction)testButtonClick:(id)sender;
 @end
