@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F509D8718D2E36900B1E411 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F509D8618D2E36900B1E411 /* Foundation.framework */; };
+		1F509D8918D2E36900B1E411 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F509D8818D2E36900B1E411 /* CoreGraphics.framework */; };
+		1F509D8B18D2E36900B1E411 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F509D8A18D2E36900B1E411 /* UIKit.framework */; };
+		1F509D9118D2E36900B1E411 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F509D8F18D2E36900B1E411 /* InfoPlist.strings */; };
+		1F509D9318D2E36900B1E411 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F509D9218D2E36900B1E411 /* main.m */; };
+		1F509D9718D2E36900B1E411 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F509D9618D2E36900B1E411 /* AppDelegate.m */; };
+		1F509DBE18D2E43000B1E411 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F509DBD18D2E43000B1E411 /* MainViewController.m */; };
+		1F509DC318D2E47000B1E411 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F509DC218D2E47000B1E411 /* MainViewController.xib */; };
+		1F509DC718D2E6CD00B1E411 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F509DC418D2E6CD00B1E411 /* Default-568h@2x.png */; };
+		1F509DC818D2E6CD00B1E411 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F509DC518D2E6CD00B1E411 /* Default.png */; };
+		1F509DC918D2E6CD00B1E411 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F509DC618D2E6CD00B1E411 /* Default@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F509D8318D2E36900B1E411 /* HaiXiuGroup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaiXiuGroup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F509D8618D2E36900B1E411 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1F509D8818D2E36900B1E411 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1F509D8A18D2E36900B1E411 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F509D8E18D2E36900B1E411 /* HaiXiuGroup-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HaiXiuGroup-Info.plist"; sourceTree = "<group>"; };
+		1F509D9018D2E36900B1E411 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F509D9218D2E36900B1E411 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F509D9418D2E36900B1E411 /* HaiXiuGroup-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HaiXiuGroup-Prefix.pch"; sourceTree = "<group>"; };
+		1F509D9518D2E36900B1E411 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F509D9618D2E36900B1E411 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F509DBC18D2E43000B1E411 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		1F509DBD18D2E43000B1E411 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		1F509DC218D2E47000B1E411 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		1F509DC418D2E6CD00B1E411 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1F509DC518D2E6CD00B1E411 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1F509DC618D2E6CD00B1E411 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F509D8018D2E36900B1E411 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F509D8918D2E36900B1E411 /* CoreGraphics.framework in Frameworks */,
+				1F509D8B18D2E36900B1E411 /* UIKit.framework in Frameworks */,
+				1F509D8718D2E36900B1E411 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F509D7A18D2E36900B1E411 = {
+			isa = PBXGroup;
+			children = (
+				1F509D8C18D2E36900B1E411 /* HaiXiuGroup */,
+				1F509D8518D2E36900B1E411 /* Frameworks */,
+				1F509D8418D2E36900B1E411 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F509D8418D2E36900B1E411 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F509D8318D2E36900B1E411 /* HaiXiuGroup.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F509D8518D2E36900B1E411 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F509D8618D2E36900B1E411 /* Foundation.framework */,
+				1F509D8818D2E36900B1E411 /* CoreGraphics.framework */,
+				1F509D8A18D2E36900B1E411 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F509D8C18D2E36900B1E411 /* HaiXiuGroup */ = {
+			isa = PBXGroup;
+			children = (
+				1F509D9518D2E36900B1E411 /* AppDelegate.h */,
+				1F509D9618D2E36900B1E411 /* AppDelegate.m */,
+				1F509DBF18D2E45500B1E411 /* Resources */,
+				1F509D8D18D2E36900B1E411 /* Supporting Files */,
+				1F509DBB18D2E41F00B1E411 /* UIClasses */,
+			);
+			path = HaiXiuGroup;
+			sourceTree = "<group>";
+		};
+		1F509D8D18D2E36900B1E411 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F509D8E18D2E36900B1E411 /* HaiXiuGroup-Info.plist */,
+				1F509D8F18D2E36900B1E411 /* InfoPlist.strings */,
+				1F509D9218D2E36900B1E411 /* main.m */,
+				1F509D9418D2E36900B1E411 /* HaiXiuGroup-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F509DBB18D2E41F00B1E411 /* UIClasses */ = {
+			isa = PBXGroup;
+			children = (
+				1F509DBC18D2E43000B1E411 /* MainViewController.h */,
+				1F509DBD18D2E43000B1E411 /* MainViewController.m */,
+			);
+			path = UIClasses;
+			sourceTree = "<group>";
+		};
+		1F509DBF18D2E45500B1E411 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F509DC018D2E45500B1E411 /* images */,
+				1F509DC118D2E45500B1E411 /* xibs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1F509DC018D2E45500B1E411 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				1F509DC418D2E6CD00B1E411 /* Default-568h@2x.png */,
+				1F509DC518D2E6CD00B1E411 /* Default.png */,
+				1F509DC618D2E6CD00B1E411 /* Default@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		1F509DC118D2E45500B1E411 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				1F509DC218D2E47000B1E411 /* MainViewController.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F509D8218D2E36900B1E411 /* HaiXiuGroup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F509DB518D2E36900B1E411 /* Build configuration list for PBXNativeTarget "HaiXiuGroup" */;
+			buildPhases = (
+				1F509D7F18D2E36900B1E411 /* Sources */,
+				1F509D8018D2E36900B1E411 /* Frameworks */,
+				1F509D8118D2E36900B1E411 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HaiXiuGroup;
+			productName = HaiXiuGroup;
+			productReference = 1F509D8318D2E36900B1E411 /* HaiXiuGroup.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F509D7B18D2E36900B1E411 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = zhang;
+			};
+			buildConfigurationList = 1F509D7E18D2E36900B1E411 /* Build configuration list for PBXProject "HaiXiuGroup" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F509D7A18D2E36900B1E411;
+			productRefGroup = 1F509D8418D2E36900B1E411 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F509D8218D2E36900B1E411 /* HaiXiuGroup */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F509D8118D2E36900B1E411 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F509D9118D2E36900B1E411 /* InfoPlist.strings in Resources */,
+				1F509DC318D2E47000B1E411 /* MainViewController.xib in Resources */,
+				1F509DC918D2E6CD00B1E411 /* Default@2x.png in Resources */,
+				1F509DC718D2E6CD00B1E411 /* Default-568h@2x.png in Resources */,
+				1F509DC818D2E6CD00B1E411 /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F509D7F18D2E36900B1E411 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F509D9718D2E36900B1E411 /* AppDelegate.m in Sources */,
+				1F509DBE18D2E43000B1E411 /* MainViewController.m in Sources */,
+				1F509D9318D2E36900B1E411 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F509D8F18D2E36900B1E411 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F509D9018D2E36900B1E411 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F509DB318D2E36900B1E411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1F509DB418D2E36900B1E411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F509DB618D2E36900B1E411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HaiXiuGroup/HaiXiuGroup-Prefix.pch";
+				INFOPLIST_FILE = "HaiXiuGroup/HaiXiuGroup-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1F509DB718D2E36900B1E411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HaiXiuGroup/HaiXiuGroup-Prefix.pch";
+				INFOPLIST_FILE = "HaiXiuGroup/HaiXiuGroup-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F509D7E18D2E36900B1E411 /* Build configuration list for PBXProject "HaiXiuGroup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F509DB318D2E36900B1E411 /* Debug */,
+				1F509DB418D2E36900B1E411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F509DB518D2E36900B1E411 /* Build configuration list for PBXNativeTarget "HaiXiuGroup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F509DB618D2E36900B1E411 /* Debug */,
+				1F509DB718D2E36900B1E411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F509D7B18D2E36900B1E411 /* Project object */;
+}
