@@ -32,6 +32,10 @@
 		1F509DC718D2E6CD00B1E411 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F509DC418D2E6CD00B1E411 /* Default-568h@2x.png */; };
 		1F509DC818D2E6CD00B1E411 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F509DC518D2E6CD00B1E411 /* Default.png */; };
 		1F509DC918D2E6CD00B1E411 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F509DC618D2E6CD00B1E411 /* Default@2x.png */; };
+		1F9EEDBB18D5B0C700F94ED3 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9EEDB818D5B0C700F94ED3 /* Topic.m */; };
+		1F9EEDBC18D5B0C700F94ED3 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9EEDBA18D5B0C700F94ED3 /* User.m */; };
+		1F9EEDBF18D5B3B600F94ED3 /* DataParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9EEDBE18D5B3B600F94ED3 /* DataParse.m */; };
+		1F9EEDC418D5C53A00F94ED3 /* ErrorCodeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9EEDC318D5C53A00F94ED3 /* ErrorCodeUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +86,15 @@
 		1F509DC418D2E6CD00B1E411 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1F509DC518D2E6CD00B1E411 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		1F509DC618D2E6CD00B1E411 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1F9EEDB718D5B0C700F94ED3 /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
+		1F9EEDB818D5B0C700F94ED3 /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
+		1F9EEDB918D5B0C700F94ED3 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		1F9EEDBA18D5B0C700F94ED3 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		1F9EEDBD18D5B3B600F94ED3 /* DataParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataParse.h; sourceTree = "<group>"; };
+		1F9EEDBE18D5B3B600F94ED3 /* DataParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataParse.m; sourceTree = "<group>"; };
+		1F9EEDC018D5BA4F00F94ED3 /* Constants+ErrorCodeDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Constants+ErrorCodeDef.h"; sourceTree = "<group>"; };
+		1F9EEDC218D5C53A00F94ED3 /* ErrorCodeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorCodeUtils.h; sourceTree = "<group>"; };
+		1F9EEDC318D5C53A00F94ED3 /* ErrorCodeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorCodeUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +165,9 @@
 			children = (
 				1F138E8018D34D30007EF456 /* DataEngine.h */,
 				1F138E8118D34D30007EF456 /* DataEngine.m */,
+				1F9EEDB618D5B0C700F94ED3 /* DataModel */,
+				1F9EEDBD18D5B3B600F94ED3 /* DataParse.h */,
+				1F9EEDBE18D5B3B600F94ED3 /* DataParse.m */,
 			);
 			path = DataClasses;
 			sourceTree = "<group>";
@@ -201,12 +217,14 @@
 				1F509D9518D2E36900B1E411 /* AppDelegate.h */,
 				1F509D9618D2E36900B1E411 /* AppDelegate.m */,
 				1F138E8418D34FFE007EF456 /* Constants+APIRequest.h */,
+				1F9EEDC018D5BA4F00F94ED3 /* Constants+ErrorCodeDef.h */,
 				1F138E8318D34FEC007EF456 /* Constants.h */,
 				1F138E7F18D34D30007EF456 /* DataClasses */,
 				1F138DF418D348FC007EF456 /* Libraries */,
 				1F509DBF18D2E45500B1E411 /* Resources */,
 				1F509D8D18D2E36900B1E411 /* Supporting Files */,
 				1F509DBB18D2E41F00B1E411 /* UIClasses */,
+				1F9EEDC118D5C53000F94ED3 /* Utils */,
 			);
 			path = HaiXiuGroup;
 			sourceTree = "<group>";
@@ -256,6 +274,26 @@
 				1F509DC218D2E47000B1E411 /* MainViewController.xib */,
 			);
 			path = xibs;
+			sourceTree = "<group>";
+		};
+		1F9EEDB618D5B0C700F94ED3 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				1F9EEDB718D5B0C700F94ED3 /* Topic.h */,
+				1F9EEDB818D5B0C700F94ED3 /* Topic.m */,
+				1F9EEDB918D5B0C700F94ED3 /* User.h */,
+				1F9EEDBA18D5B0C700F94ED3 /* User.m */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		1F9EEDC118D5C53000F94ED3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1F9EEDC218D5C53A00F94ED3 /* ErrorCodeUtils.h */,
+				1F9EEDC318D5C53A00F94ED3 /* ErrorCodeUtils.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,9 +363,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9EEDBC18D5B0C700F94ED3 /* User.m in Sources */,
+				1F9EEDC418D5C53A00F94ED3 /* ErrorCodeUtils.m in Sources */,
 				1F138E4C18D348FC007EF456 /* ASIDataCompressor.m in Sources */,
 				1F509D9718D2E36900B1E411 /* AppDelegate.m in Sources */,
 				1F138E5018D348FC007EF456 /* ASIHTTPRequest.m in Sources */,
+				1F9EEDBB18D5B0C700F94ED3 /* Topic.m in Sources */,
+				1F9EEDBF18D5B3B600F94ED3 /* DataParse.m in Sources */,
 				1F138E4B18D348FC007EF456 /* ASIAuthenticationDialog.m in Sources */,
 				1F138E4F18D348FC007EF456 /* ASIFormDataRequest.m in Sources */,
 				1F138E8218D34D30007EF456 /* DataEngine.m in Sources */,

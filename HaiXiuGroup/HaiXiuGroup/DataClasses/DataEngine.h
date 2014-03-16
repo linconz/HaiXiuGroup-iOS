@@ -10,6 +10,11 @@
 #import "ASIHTTPRequest.h"
 
 @interface DataEngine : NSObject<ASIHTTPRequestDelegate>
+{
+    NSMutableArray      *_topics;
+}
+
+@property (nonatomic, retain) NSMutableArray *topics;
 
 + (DataEngine *)sharedDataEngine;
 - (DataEngine *)init;

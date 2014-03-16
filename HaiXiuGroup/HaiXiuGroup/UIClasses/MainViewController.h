@@ -10,6 +10,7 @@
 
 @interface MainViewController : UIViewController
 {
+    NSString            *_controllerId;
     IBOutlet UIButton   *_testButton;
 }
 - (IBAction)testButtonClick:(id)sender;

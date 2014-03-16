@@ -10,9 +10,18 @@
 #import "ASIHTTPRequest.h"
 #import "Constants.h"
 #import "Constants+APIRequest.h"
+#import "Constants+ErrorCodeDef.h"
 #import "JSONKit.h"
+#import "ErrorCodeUtils.h"
+
+#import "DataParse.h"
+
+#import "User.h"
+#import "Topic.h"
 
 @implementation DataEngine
+
+@synthesize topics = _topics;
 
 static DataEngine *dataEngine = nil;
 
@@ -31,28 +40,54 @@ static DataEngine *dataEngine = nil;
 	self = [super init];
     if (self) {
         [[NSNotificationCenter defaultCenter] removeObserver:self];
+        _topics = [[NSMutableArray alloc] init];
     }
 	return self;
 }
 
 - (void)getGroupTopicsReceived:(ASIHTTPRequest *)request
 {
+    NSMutableDictionary *result = [[NSMutableDictionary alloc] initWithCapacity:4];
+    
+    NSDictionary *requestInfo = [request userInfo];
+    NSString *notificationName = [requestInfo objectForKey:NOTIFICATION_NAME];
+    [result setValue:[requestInfo objectForKey:REQUEST_SOURCE_KEY] forKey:REQUEST_SOURCE_KEY];
     if (![request error]) {
         NSData *data = [request responseData];
         NSDictionary *dict = [data objectFromJSONData];
-        NSDictionary *topic = [[dict objectForKey:@"topics"] objectAtIndex:0];
-        NSLog(@"content:%@", [topic objectForKey:@"content"]);
-        NSLog(@"alt:%@", [topic objectForKey:@"alt"]);
+        NSArray *topicsArray = [dict objectForKey:@"topics"];
+        // 豆瓣返回的东西也没有个返回状态的标识,所以先用是否返回tpoics作为数据验证
+        if (topicsArray && [topicsArray isKindOfClass:[NSArray class]]) {
+            if ([[requestInfo objectForKey:@"startPage"] isEqualToNumber:[NSNumber numberWithInt:0]]) {
+                [_topics removeAllObjects];
+            }
+            for (int i=0; i<[topicsArray count]; i++) {
+                NSDictionary *topicDict = [topicsArray objectAtIndex:i];
+                Topic *topic = [[Topic alloc] init];
+                [DataParse createTopicFromRemoteData:topic remoteData:topicDict];
+                [_topics addObject:topic];
+            }
+            [result setObject:[NSNumber numberWithInt:0] forKey:RETURN_CODE];
+        } else {
+            [result setObject:[NSNumber numberWithInt:-2] forKey:RETURN_CODE];
+            [result setObject:[ErrorCodeUtils errorDetailFromErrorCode:-2]
+                       forKey:TOUI_REQUEST_ERROR_MESSAGE];
+        }
     } else {
-        
+        // 服务器错误
+        [result setObject:[NSNumber numberWithInt:-1] forKey:RETURN_CODE];
+        [result setObject:[ErrorCodeUtils errorDetailFromErrorCode:-1]
+                   forKey:TOUI_REQUEST_ERROR_MESSAGE];
     }
+    [[NSNotificationCenter defaultCenter] postNotificationName:notificationName
+                                                        object:nil
+                                                      userInfo:result];
 }
 
 - (void)getGroupTopics:(NSNumber *) startPage
               pageSize:(NSNumber *) pageSize
                 source:(NSString *) source
 {
-    
     NSString *urlString = [NSString stringWithFormat:@"%@%@", DOUBAN_API_URL, REQUEST_HAIXIUZU_TOPICS];
     urlString = [urlString stringByAppendingFormat:@"?start=%lld", (startPage ? [startPage longLongValue] : 0)];
     urlString = [urlString stringByAppendingFormat:@"&count=%lld", (pageSize ? [pageSize longLongValue] : 0)];
@@ -64,9 +99,11 @@ static DataEngine *dataEngine = nil;
     [dictionary setValue:[[NSProcessInfo processInfo] globallyUniqueString]
                   forKey:@"id"];
     [dictionary setValue:source
-                  forKey:@"source"];
+                  forKey:REQUEST_SOURCE_KEY];
     [dictionary setValue:REQUEST_HAIXIUZU_TOPICS
-                  forKey:@"name"];
+                  forKey:NOTIFICATION_NAME];
+    [dictionary setValue:startPage forKey:@"startPage"];
+    [dictionary setValue:pageSize forKey:@"pageSize"];
     [request setUserInfo:dictionary];
     [request startAsynchronous];
 }
@@ -75,7 +112,7 @@ static DataEngine *dataEngine = nil;
 
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
-    NSString *notificationName = [[request userInfo] valueForKeyPath:@"name"];
+    NSString *notificationName = [[request userInfo] valueForKeyPath:NOTIFICATION_NAME];
     if ([notificationName isEqualToString:REQUEST_HAIXIUZU_TOPICS]) {
         [self getGroupTopicsReceived:request];
     }
