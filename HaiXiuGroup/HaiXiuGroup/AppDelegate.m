@@ -7,16 +7,32 @@
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
+#import "LeftMenuViewController.h"
+#import "TopicListViewController.h"
+#import "Constants.h"
+#import "UIImage+Color.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [application setStatusBarStyle:UIStatusBarStyleBlackOpaque];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor blackColor];
-    MainViewController *mainViewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
-    self.window.rootViewController = mainViewController;
+
+    TopicListViewController *topicList = [[TopicListViewController alloc] initWithNibName:@"TopicListViewController" bundle:nil];
+    
+    UINavigationController *postController = [[UINavigationController alloc] init];
+    
+    [postController.navigationBar setBarStyle:UIBarStyleBlack];
+    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
+        [postController.navigationBar setBarTintColor:IOS7_NAVGATION_BAR_COLOR];
+    } else {
+        [postController.navigationBar setBackgroundImage:[UIImage imageWithColor:IOS6_NAVGATION_BAR_COLOR] forBarMetrics:UIBarMetricsDefault];
+    }
+    [postController pushViewController:topicList animated:NO];
+    self.window.rootViewController = postController;
     
     [self.window makeKeyAndVisible];
     return YES;

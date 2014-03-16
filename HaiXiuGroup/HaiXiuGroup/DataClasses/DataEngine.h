@@ -12,12 +12,16 @@
 @interface DataEngine : NSObject<ASIHTTPRequestDelegate>
 {
     NSMutableArray      *_topics;
+    NSMutableArray      *_downloadingFiles;
 }
 
 @property (nonatomic, retain) NSMutableArray *topics;
 
 + (DataEngine *)sharedDataEngine;
 - (DataEngine *)init;
+
+- (void)downloadFileByUrl:(NSString *)fileUrl
+                     from:(NSString *)source;
 
 - (void)getGroupTopics:(NSNumber *) startPage
               pageSize:(NSNumber *) pageSize
