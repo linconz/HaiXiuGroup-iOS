@@ -64,6 +64,7 @@ static DataEngine *dataEngine = nil;
             [result setObject:filePath forKey:TOUI_PARAM_DOWNLOADFILE_FILEPATH];
         }
         [result setObject:[requestInfo objectForKey:@"fileUrl"] forKey:TOUI_PARAM_DOWNLOADFILE_FILEURL];
+        [result setObject:[NSNumber numberWithInt:0] forKey:RETURN_CODE];
     } else {
         // 服务器错误
         [result setObject:[NSNumber numberWithInt:-1] forKey:RETURN_CODE];

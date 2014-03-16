@@ -80,6 +80,7 @@
     }
     
     if ([topic.photos count] > 0) {
+        [_topicImageButton setHidden:NO];
         NSString *photoFirstUrl = [topic.photos objectAtIndex:0];
         if (photoFirstUrl && [photoFirstUrl length] > 0) {
             NSString *imagePath = [[ImageCacheEngine sharedInstance] getImagePathByUrl:photoFirstUrl];
@@ -91,6 +92,10 @@
                                    forState:UIControlStateNormal];
             }
         }
+    } else {
+        [_topicImageButton setHidden:YES];
+        [_topicImageButton setImage:[UIImage imageWithContentsOfFile:@"block"]
+                           forState:UIControlStateNormal];
     }
 }
 
