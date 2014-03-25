@@ -21,6 +21,8 @@
 
 #import "TopicListCell.h"
 
+#import "NewTopicsViewController.h"
+
 #define PAGESIZE 20
 
 @interface TopicListViewController (notification)
@@ -76,6 +78,17 @@
         _loadMoreShowing = NO;
 	}
     [self requestGetItems];
+    
+    
+    // -----------wypEdited-----------
+    UIBarButtonItem *newTopicItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(loadNewTopicViewController)];
+    self.navigationItem.rightBarButtonItem = newTopicItem;
+}
+
+- (void)loadNewTopicViewController
+{
+    NewTopicsViewController *newTopicVC = [[NewTopicsViewController alloc] initWithNibName:@"NewTopicsViewController" bundle:nil];
+    [self.navigationController pushViewController:newTopicVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

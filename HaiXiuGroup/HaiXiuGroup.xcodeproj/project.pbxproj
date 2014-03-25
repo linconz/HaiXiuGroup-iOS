@@ -65,6 +65,16 @@
 		1FDFDF4518D5F5ED00354196 /* NSString+MD5.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1FDFDF4218D5F5ED00354196 /* NSString+MD5.mm */; };
 		1FDFDF4818D5F62800354196 /* SkipBackupUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDFDF4718D5F62800354196 /* SkipBackupUtils.m */; };
 		1FDFDF4B18D5F63F00354196 /* ImageCacheEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDFDF4A18D5F63F00354196 /* ImageCacheEngine.m */; };
+		61A0587A18D7034800B8B085 /* libNYXImagesKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A0587918D7034800B8B085 /* libNYXImagesKit.a */; };
+		61A0587C18D7036C00B8B085 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A0587B18D7036C00B8B085 /* Accelerate.framework */; };
+		61A0587E18D7037200B8B085 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A0587D18D7037200B8B085 /* AssetsLibrary.framework */; };
+		61A0588018D7037900B8B085 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A0587F18D7037900B8B085 /* ImageIO.framework */; };
+		61A0588218D7038700B8B085 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A0588118D7038700B8B085 /* QuartzCore.framework */; };
+		61A0588418D7038D00B8B085 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A0588318D7038D00B8B085 /* CoreImage.framework */; };
+		61E26E9A18DF063400B499D0 /* TouchableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E26E9918DF063400B499D0 /* TouchableImageView.m */; };
+		61F97D7F18DD3B74005A5051 /* NewTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F97D7E18DD3B74005A5051 /* NewTopic.m */; };
+		61F97D8518DD5AC6005A5051 /* NewTopicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F97D8318DD5AC6005A5051 /* NewTopicsViewController.m */; };
+		61F97D8618DD5AC6005A5051 /* NewTopicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61F97D8418DD5AC6005A5051 /* NewTopicsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -179,6 +189,20 @@
 		1FDFDF4918D5F63F00354196 /* ImageCacheEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCacheEngine.h; sourceTree = "<group>"; };
 		1FDFDF4A18D5F63F00354196 /* ImageCacheEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCacheEngine.m; sourceTree = "<group>"; };
 		1FDFDF4C18D5FA9F00354196 /* Constants+RetrunParamDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Constants+RetrunParamDef.h"; sourceTree = "<group>"; };
+		61A0587918D7034800B8B085 /* libNYXImagesKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNYXImagesKit.a; sourceTree = "<group>"; };
+		61A0587B18D7036C00B8B085 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		61A0587D18D7037200B8B085 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		61A0587F18D7037900B8B085 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		61A0588118D7038700B8B085 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		61A0588318D7038D00B8B085 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		61E26E9618DECF7E00B499D0 /* Constants+Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Constants+Notification.h"; sourceTree = "<group>"; };
+		61E26E9818DF063400B499D0 /* TouchableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchableImageView.h; sourceTree = "<group>"; };
+		61E26E9918DF063400B499D0 /* TouchableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchableImageView.m; sourceTree = "<group>"; };
+		61F97D7D18DD3B74005A5051 /* NewTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTopic.h; sourceTree = "<group>"; };
+		61F97D7E18DD3B74005A5051 /* NewTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTopic.m; sourceTree = "<group>"; };
+		61F97D8218DD5AC6005A5051 /* NewTopicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTopicsViewController.h; sourceTree = "<group>"; };
+		61F97D8318DD5AC6005A5051 /* NewTopicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTopicsViewController.m; sourceTree = "<group>"; };
+		61F97D8418DD5AC6005A5051 /* NewTopicsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewTopicsViewController.xib; path = ../../UIClasses/NewTopicsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,9 +210,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A0588418D7038D00B8B085 /* CoreImage.framework in Frameworks */,
+				61A0588218D7038700B8B085 /* QuartzCore.framework in Frameworks */,
+				1F138E7818D34A02007EF456 /* MobileCoreServices.framework in Frameworks */,
+				61A0588018D7037900B8B085 /* ImageIO.framework in Frameworks */,
+				61A0587E18D7037200B8B085 /* AssetsLibrary.framework in Frameworks */,
+				61A0587C18D7036C00B8B085 /* Accelerate.framework in Frameworks */,
 				1F138E7A18D34A11007EF456 /* libz.dylib in Frameworks */,
 				1F509D8918D2E36900B1E411 /* CoreGraphics.framework in Frameworks */,
-				1F138E7818D34A02007EF456 /* MobileCoreServices.framework in Frameworks */,
+				61A0587A18D7034800B8B085 /* libNYXImagesKit.a in Frameworks */,
 				1F138E7618D349FD007EF456 /* SystemConfiguration.framework in Frameworks */,
 				1F509D8B18D2E36900B1E411 /* UIKit.framework in Frameworks */,
 				1F509D8718D2E36900B1E411 /* Foundation.framework in Frameworks */,
@@ -201,6 +231,7 @@
 		1F138DF418D348FC007EF456 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				61A0587818D7033900B8B085 /* ImageEffect */,
 				1FDFDF3C18D5F5ED00354196 /* MD5 */,
 				1F138DF518D348FC007EF456 /* ASIHttpRequest */,
 				1F138E8518D354C4007EF456 /* JSONKit */,
@@ -288,6 +319,11 @@
 		1F509D8518D2E36900B1E411 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				61A0588318D7038D00B8B085 /* CoreImage.framework */,
+				61A0588118D7038700B8B085 /* QuartzCore.framework */,
+				61A0587F18D7037900B8B085 /* ImageIO.framework */,
+				61A0587D18D7037200B8B085 /* AssetsLibrary.framework */,
+				61A0587B18D7036C00B8B085 /* Accelerate.framework */,
 				1F509D8818D2E36900B1E411 /* CoreGraphics.framework */,
 				1F509D8618D2E36900B1E411 /* Foundation.framework */,
 				1F138E7918D34A11007EF456 /* libz.dylib */,
@@ -306,6 +342,7 @@
 				1F138E8418D34FFE007EF456 /* Constants+APIRequest.h */,
 				1F9EEDC018D5BA4F00F94ED3 /* Constants+ErrorCodeDef.h */,
 				1FDFDF4C18D5FA9F00354196 /* Constants+RetrunParamDef.h */,
+				61E26E9618DECF7E00B499D0 /* Constants+Notification.h */,
 				1F138E8318D34FEC007EF456 /* Constants.h */,
 				1F9EEDC518D5CA6100F94ED3 /* CustomUIClasses */,
 				1F138E7F18D34D30007EF456 /* DataClasses */,
@@ -338,6 +375,8 @@
 				1F9EEDEC18D5D2B100F94ED3 /* TopicDetailViewController.m */,
 				1F9EEDD018D5CAFC00F94ED3 /* TopicListViewController.h */,
 				1F9EEDD118D5CAFC00F94ED3 /* TopicListViewController.m */,
+				61F97D8218DD5AC6005A5051 /* NewTopicsViewController.h */,
+				61F97D8318DD5AC6005A5051 /* NewTopicsViewController.m */,
 			);
 			path = UIClasses;
 			sourceTree = "<group>";
@@ -364,6 +403,7 @@
 		1F509DC118D2E45500B1E411 /* xibs */ = {
 			isa = PBXGroup;
 			children = (
+				61F97D8418DD5AC6005A5051 /* NewTopicsViewController.xib */,
 				1F9EEDE918D5D04B00F94ED3 /* LeftMenuViewController.xib */,
 				1F9EEDF018D5D2BC00F94ED3 /* TopicDetailViewController.xib */,
 				1F9EEDD518D5CB1600F94ED3 /* TopicListViewController.xib */,
@@ -379,6 +419,8 @@
 				1F9EEDB818D5B0C700F94ED3 /* Topic.m */,
 				1F9EEDB918D5B0C700F94ED3 /* User.h */,
 				1F9EEDBA18D5B0C700F94ED3 /* User.m */,
+				61F97D7D18DD3B74005A5051 /* NewTopic.h */,
+				61F97D7E18DD3B74005A5051 /* NewTopic.m */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -403,6 +445,7 @@
 		1F9EEDC518D5CA6100F94ED3 /* CustomUIClasses */ = {
 			isa = PBXGroup;
 			children = (
+				61E26E9718DF060D00B499D0 /* TouchableImageView */,
 				1FDFDF3018D5E74700354196 /* TopicListCell */,
 				1FDFDF2F18D5E71C00354196 /* MMDrawerController */,
 				1F9EEDC618D5CA6100F94ED3 /* PullRefresh */,
@@ -500,6 +543,23 @@
 			path = MD5;
 			sourceTree = "<group>";
 		};
+		61A0587818D7033900B8B085 /* ImageEffect */ = {
+			isa = PBXGroup;
+			children = (
+				61A0587918D7034800B8B085 /* libNYXImagesKit.a */,
+			);
+			name = ImageEffect;
+			sourceTree = "<group>";
+		};
+		61E26E9718DF060D00B499D0 /* TouchableImageView */ = {
+			isa = PBXGroup;
+			children = (
+				61E26E9818DF063400B499D0 /* TouchableImageView.h */,
+				61E26E9918DF063400B499D0 /* TouchableImageView.m */,
+			);
+			name = TouchableImageView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -566,6 +626,7 @@
 				1FDFDF2218D5E5F200354196 /* SVWebViewController.strings in Resources */,
 				1F9EEDEA18D5D04B00F94ED3 /* LeftMenuViewController.xib in Resources */,
 				1FDFDF2918D5E5F200354196 /* SVWebViewControllerActivityChrome@2x.png in Resources */,
+				61F97D8618DD5AC6005A5051 /* NewTopicsViewController.xib in Resources */,
 				1FDFDF2618D5E5F200354196 /* SVWebViewControllerActivityChrome-iPad.png in Resources */,
 				1F509DC818D2E6CD00B1E411 /* Default.png in Resources */,
 				1FDFDF2418D5E5F200354196 /* SVWebViewController.bundle in Resources */,
@@ -591,6 +652,7 @@
 				1F9EEDC418D5C53A00F94ED3 /* ErrorCodeUtils.m in Sources */,
 				1F138E4C18D348FC007EF456 /* ASIDataCompressor.m in Sources */,
 				1F509D9718D2E36900B1E411 /* AppDelegate.m in Sources */,
+				61F97D8518DD5AC6005A5051 /* NewTopicsViewController.m in Sources */,
 				1FDFDF3318D5E76E00354196 /* TopicListCell.m in Sources */,
 				1FDFDF2E18D5E5F200354196 /* SVWebViewControllerActivity.m in Sources */,
 				1F9EEDE718D5D03C00F94ED3 /* LeftMenuViewController.m in Sources */,
@@ -604,10 +666,12 @@
 				1F138E4B18D348FC007EF456 /* ASIAuthenticationDialog.m in Sources */,
 				1F138E4F18D348FC007EF456 /* ASIFormDataRequest.m in Sources */,
 				1F9EEDCD18D5CA6100F94ED3 /* EGORefreshTableHeaderView.m in Sources */,
+				61E26E9A18DF063400B499D0 /* TouchableImageView.m in Sources */,
 				1F138E8218D34D30007EF456 /* DataEngine.m in Sources */,
 				1FDFDF2518D5E5F200354196 /* SVWebViewController.m in Sources */,
 				1F138E5118D348FC007EF456 /* ASIInputStream.m in Sources */,
 				1FDFDF2318D5E5F200354196 /* SVModalWebViewController.m in Sources */,
+				61F97D7F18DD3B74005A5051 /* NewTopic.m in Sources */,
 				1FDFDF4418D5F5ED00354196 /* NSData+MD5.m in Sources */,
 				1FDFDF3B18D5F1A900354196 /* NSStringExtra.m in Sources */,
 				1FDFDF4518D5F5ED00354196 /* NSString+MD5.mm in Sources */,
@@ -732,6 +796,10 @@
 				GCC_PREFIX_HEADER = "HaiXiuGroup/HaiXiuGroup-Prefix.pch";
 				INFOPLIST_FILE = "HaiXiuGroup/HaiXiuGroup-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/My\\ Xcode\\ Projects/HaiXiuGroup-iOS/HaiXiuGroup/HaiXiuGroup/Libraries",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -746,6 +814,10 @@
 				GCC_PREFIX_HEADER = "HaiXiuGroup/HaiXiuGroup-Prefix.pch";
 				INFOPLIST_FILE = "HaiXiuGroup/HaiXiuGroup-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/My\\ Xcode\\ Projects/HaiXiuGroup-iOS/HaiXiuGroup/HaiXiuGroup/Libraries",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

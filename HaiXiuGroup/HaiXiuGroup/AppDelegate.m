@@ -11,6 +11,8 @@
 #import "TopicListViewController.h"
 #import "Constants.h"
 #import "UIImage+Color.h"
+#import "NewTopicsViewController.h"
+#import "Constants+Notification.h"
 
 @implementation AppDelegate
 
@@ -22,6 +24,8 @@
     self.window.backgroundColor = [UIColor blackColor];
 
     TopicListViewController *topicList = [[TopicListViewController alloc] initWithNibName:@"TopicListViewController" bundle:nil];
+    
+//    NewTopicsViewController *newTopicVC = [[NewTopicsViewController alloc] initWithNibName:@"NewTopicsViewController" bundle:nil];
     
     UINavigationController *postController = [[UINavigationController alloc] init];
     
@@ -63,6 +67,9 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:ApplicationWillTerminateNotifacation object:nil];
+    
 }
 
 @end

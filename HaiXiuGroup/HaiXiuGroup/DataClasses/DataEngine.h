@@ -13,6 +13,7 @@
 {
     NSMutableArray      *_topics;
     NSMutableArray      *_downloadingFiles;
+    NSMutableArray      *_postingFiles;
 }
 
 @property (nonatomic, retain) NSMutableArray *topics;

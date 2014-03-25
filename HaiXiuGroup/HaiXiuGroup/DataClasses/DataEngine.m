@@ -99,6 +99,21 @@ static DataEngine *dataEngine = nil;
     [request startAsynchronous];
 }
 
+- (void) postFileByData:(NSData *)data to:(NSString *)destUrl
+{
+//    if ([_postingFiles containsObject:<#(id)#>]) {
+//        <#statements#>
+//    }
+    
+    NSURL *url = [NSURL URLWithString:destUrl];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request setPostBody:[NSMutableData dataWithData:data]];
+    
+//    TODO: Finish Post
+    
+    
+}
+
 - (void)getGroupTopicsReceived:(ASIHTTPRequest *)request
 {
     NSMutableDictionary *result = [[NSMutableDictionary alloc] initWithCapacity:4];
